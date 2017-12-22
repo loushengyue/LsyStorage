@@ -3,7 +3,7 @@
  *      author loushengyue
  *      website http://www.loushengyue.com
  *      version 1.0.2
- *      methods {
+ *      methods
  *              .getItem(key[string])
  *              .getArr(prex[string])
  *              .setItem(key[string],value[string,object])
@@ -11,7 +11,6 @@
  *              .setList(keys[array],values[array])
  *              .removeItem(key[string])
  *              .clearAll()
- *           }
  */
 ;(function (win) {
     /* *
