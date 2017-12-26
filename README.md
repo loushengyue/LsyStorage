@@ -7,6 +7,7 @@ website http://www.loushengyue.com
 version 1.0.2
 methods
         .getItem(key[string])
+        .getItemsByKeys(keys[array])
         .getArr(prex[string])
         .setItem(key[string],value[string,object])
         .setArr(prex[string],values[array])
@@ -30,6 +31,20 @@ $ bower install https://github.com/loushengyue/LsyStorage.git
 
 ------
 ## 使用方法
+
+
+### `.getItemsByKeys(keys[array])[新增API]`
+
+例如：
+
+```
+    var arr = ['apple', 'banana', 'orange', 'grape'];
+    var keys = ['fruits_0', 'fruits_3'];
+    LsySession.setArr('fruits', arr);
+    var list = LsySession.getItemsByKeys(keys);
+    console.log(list);//['apple','grape']
+```
+
 
 ### `.setItem(key[string],value[string,object])`
 
